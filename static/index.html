@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/testMicrophone.js"></script>
+    </head>
+    <body>
+        Stwórz pokój<br>
+        Dołącz do pokoju<br><br>
+        Test gierki<br>
+        <button id="startTestGame">Start gry</button><br><br>
+        Test mikrofonu<br>
+        <button id="start">Start</button><br>
+        <script>
+          const downloadLink = document.getElementById('download');
+          const startButton = document.getElementById('start');
+          const gameStartButton = document.getElementById('startTestGame');
+
+          gameStartButton.addEventListener('click', function()  {
+              console.log('Redirect');
+          })
+        </script>
+
+    </body>
+</html>
