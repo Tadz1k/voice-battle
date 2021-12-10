@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+        Podgląd spektogramu dźwięku:<br>
+        <img src =game_images/{{ .ImageFilename }}.png></img><br>
+        <br><br>
+        Odtwórz dźwięk:<br>
+        <audio controls>
+            <source src="sounds/{{.SoundFileName}}">
+        </audio>
+        <br><br>
+        Podejrzenie próbek: <br>
+        <details>
+            <summary>Wyświetl wyniki próbek</summary>
+            <p>{{.SoundProbes}}</p>
+        </details>
+        <br><br>
+        Nagraj swój dźwięk:
+        <br>
+        <button id="start">Start</button><br>
+        <script>var musicDuration = {{.Duration}}
+                var photoName = {{.ImageFilename}}</script>
+        {{.DurationScript}}
+        <script>
+            const startButton = document.getElementById('start');
+        </script>
+
+    </body>
+</html>

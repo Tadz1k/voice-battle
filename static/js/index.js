@@ -29,5 +29,7 @@ function releaseTestPlayer(recordedChunks)    {
 function destroyPlayer()    {
     var oldPlayer = document.getElementById("player");
     if(oldPlayer != null) oldPlayer.remove();
+    var oldText = document.getElementById("testPlayerText");
+    if(oldText != null) oldText.remove();
 }
 

@@ -8,7 +8,7 @@ const handleSuccess = function(stream) {
     });
 
     mediaRecorder.addEventListener('stop', function() {
-      releaseTestPlayer(recordedChunks);
+      releaseTestPlayer(recordedChunks); 
     });
 
     startButton.addEventListener('click', function()    {
